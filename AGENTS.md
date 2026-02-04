@@ -68,8 +68,8 @@ Define fallback behavior when tools or services are unavailable.
 
 | Scenario | Fallback |
 |----------|----------|
-| Notion API failure | Report the error, save content locally as `.md`, and ask for retry permission. |
-| Skill unavailable | State which skill is missing, proceed with available tools, and note limitations. |
+| Notion API failure | Report the error, explain why it failed, give suggestions to fix it, and ask for retry permission. |
+| Skill unavailable | State which skill is missing, refer to [SKILLS_INSTALLATION.md](SKILLS_INSTALLATION.md) for reinstallation, proceed with available tools, and note limitations. |
 | Web search unavailable | State the limitation, ask for permission before proceeding with unverified content. |
 | Insufficient permissions | Stop, report the permission issue, and wait for user guidance. |
 
@@ -77,6 +77,7 @@ Define fallback behavior when tools or services are unavailable.
 
 Verify factual claims with web search before writing to Notion, and include sources with the output.
 
+- **Always search in English as well.** Regardless of the input language, always perform an additional search in English to ensure comprehensive coverage and access to broader resources.
 - Use web search by default to validate facts unless I explicitly ask you not to browse.
 - If web search is unavailable, state the limitation and ask for permission before proceeding with unverified content.
 - Provide source links in the Notion page and in the chat summary.
