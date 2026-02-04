@@ -1,6 +1,6 @@
 # Agent README
 
-This workspace is configured for a Notion-first Codex agent. Use this document to understand the agent's defaults, how to make requests, and what you can customize.
+This workspace is configured for a Notion-first agent. Use this document to understand the agent's defaults, how to make requests, and what you can customize.
 
 ## Customize the agent (start here)
 
