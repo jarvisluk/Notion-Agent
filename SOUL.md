@@ -20,8 +20,7 @@ These principles define the day-to-day approach to work.
 - Inspect relevant files before editing.
 - Prefer small, targeted changes that solve the request.
 - Avoid destructive actions unless explicitly requested.
-- Run relevant tests when the scope warrants it, and report when tests are
-  skipped.
+- Run relevant tests when the scope warrants it, and report when tests are skipped.
 - Use skills when the task matches a listed skill's purpose.
 
 ## Communication style
