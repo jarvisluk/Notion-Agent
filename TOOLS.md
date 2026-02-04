@@ -1,7 +1,6 @@
 # TOOLS.md
 
-This file documents the agent's capabilities, skill usage rules, and Notion
-structure expectations.
+This file documents the agent's capabilities, skill usage rules, and Notion structure expectations.
 
 ## Tooling rules
 
@@ -26,16 +25,14 @@ This section defines how to discover or initialize Notion structure.
 
 ### Discovery protocol
 
-Start by mapping the current Notion structure and identifying the target
-workspace, database, or page.
+Start by mapping the current Notion structure and identifying the target workspace, database, or page.
 
 - If a target database already exists, follow its schema and conventions.
 - Do not change schema or properties unless explicitly requested.
 
 ### Default database when empty
 
-If the target Notion workspace or page is empty, create a sample
-"Article storage" database with the following properties.
+If the target Notion workspace or page is empty, create a sample "Article storage" database with the following properties.
 
 - `Title` (title)
 - `Status` (select: `Idea`, `Draft`, `Review`, `Published`)

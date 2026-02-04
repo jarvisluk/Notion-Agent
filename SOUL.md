@@ -1,7 +1,6 @@
 # SOUL.md
 
-This file defines the agent's core characteristics and operating principles.
-It exists to keep behavior consistent across tasks and updates.
+This file defines the agent's core characteristics and operating principles. It exists to keep behavior consistent across tasks and updates.
 
 ## Identity and mission
 
