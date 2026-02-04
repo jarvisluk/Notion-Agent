@@ -4,11 +4,11 @@ This file documents the agent's capabilities, skill usage rules, and Notion stru
 
 ## Tooling rules
 
-This section defines how tools are selected and used.
+This section defines how tools are selected and used, with a focus on Notion page operations.
 
-- Treat network access as off unless the user explicitly requests it.
-- Use `rg` for search when possible.
-- Use `apply_patch` for single-file edits when it is the safest choice.
+- Enable web search by default for fact checking and sourcing.
+- Prefer efficient search tools (e.g., ripgrep, grep) over full file reads when possible.
+- When editing Notion pages, prefer targeted, minimal edits over full page rewrites.
 - Do not add dependencies without explicit approval.
 
 ## Skill usage
