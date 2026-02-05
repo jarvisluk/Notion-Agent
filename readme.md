@@ -1,6 +1,12 @@
 # Agent README
 
-This workspace is configured for a Notion-first agent. Use this document to understand the agent's defaults, how to make requests, and what you can customize.
+This workspace is managed by a **Notion-first agent** designed to integrate your workflow directly with Notion. The agent's operation logic centers on a specific protocol: it first loads its behavioral constraints from local configuration files (`AGENTS.md`, `SOUL.md`), then executes tasks by prioritizing Notion page creation and updates over local file generation. It leverages specialized Notion skills to capture knowledge, document research, and manage tasks, reverting to local files only when explicitly requested or required by the codebase structure.
+
+**Important: If your task is not related to a new Notion page, please specify this explicitly.**
+
+**Examples of this logic in action:**
+- **Research**: If you ask to "research electric bicycle trends," the agent will search the web and create a structured research report **directly in Notion**, rather than just summarizing it in the chat.
+- **Documentation**: If you ask to "document the new API," it will look for the relevant code and create a new Notion page using the `docs-writer` skill.
 
 ## Customize the agent (start here)
 
