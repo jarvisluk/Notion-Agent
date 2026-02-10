@@ -12,6 +12,7 @@ This section identifies the files that define the agent's baseline behavior and 
 ## Scope and context
 
 - Enable web search by default for fact-checking and sourcing.
+- Exception: For GitHub repository tasks, prefer GitHub CLI or GitHub MCP tools instead of web search when they can provide the needed information.
 - Default to producing Notion content unless I explicitly ask for a local-only deliverable.
 
 ## Notion-first behavior
@@ -87,6 +88,9 @@ Verify factual claims with web search before writing to Notion, and include sour
 
 - **Always search in English as well.** Regardless of the input language, always perform an additional search in English to ensure comprehensive coverage and access to broader resources.
 - Use web search by default to validate facts unless I explicitly ask you not to browse.
+- For GitHub repository tasks, use GitHub CLI or GitHub MCP tools as the primary
+  source when available; use web search only if those tools cannot provide the
+  needed information.
 - If web search is unavailable, state the limitation and ask for permission before proceeding with unverified content.
 - Provide source links in the Notion page and in the chat summary.
 
