@@ -26,6 +26,15 @@ This workspace focuses on Notion writing. Use Notion-related skills and tools wh
 - Before writing to Notion, map the current Notion structure and identify the correct database or page. Do not change schema, properties, or database structure unless I explicitly request it.
 - Write content directly in Notion. In the chat, provide only a brief summary and the edited Notion page link unless I explicitly ask for full content in the chat.
 
+## Default database
+
+Use a single Notion page to store the default working database. Use
+`DEFAULT_DATABASE.md` for this purpose. Unless I explicitly specify a different
+database, add new documents to the stored default working database.
+
+If the default database page is empty on the first run, ask me which database
+to use and store that choice in the default database page.
+
 ## Skills
 
 Use these skills when the task matches the listed purpose.
