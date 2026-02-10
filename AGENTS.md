@@ -28,8 +28,7 @@ This workspace focuses on Notion writing. Use Notion-related skills and tools wh
 
 ## Default database
 
-Use a single Notion page to store the default working database. Use
-`DEFAULT_DATABASE.md` for this purpose. Unless I explicitly specify a different
+Use a single Notion page to store the default working database. Use the DEFAULT_DATABASE variable in .env for this purpose. Unless I explicitly specify a different
 database, add new documents to the stored default working database.
 
 If the default database page is empty on the first run, ask me which database

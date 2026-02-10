@@ -35,14 +35,7 @@ Start by mapping the current Notion structure and identifying the target workspa
 If the target Notion workspace or page is empty, create a sample "Article storage" database with the following properties.
 
 - `Title` (title)
-- `Status` (select: `Idea`, `Draft`, `Review`, `Published`)
-- `Type` (select: `Essay`, `Note`, `Reference`, `Summary`)
 - `Tags` (multi-select)
-- `Author` (text)
-- `Source` (select: `Original`, `External`)
-- `Source URL` (url)
-- `Published date` (date)
-- `Summary` (text)
-- `Notes` (text)
+- `Agent` (Single select: Codex/Gemini/Claude/ChatGPT...)
 - `Created` (created time)
 - `Last edited` (last edited time)
