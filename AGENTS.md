@@ -15,6 +15,14 @@ This section identifies the files that define the agent's baseline behavior and 
 - Exception: For GitHub repository tasks, prefer GitHub CLI or GitHub MCP tools instead of web search when they can provide the needed information.
 - Default to producing Notion content unless I explicitly ask for a local-only deliverable.
 
+## Local output directory
+
+Use `agent-local-output/` only when I explicitly request local output.
+
+- Default output remains Notion unless I explicitly request local-only output.
+- Treat this directory as local-only workspace output when used.
+- Do not commit files under this directory to Git.
+
 ## Notion-first behavior
 
 **Default output: Create a new Notion page using Notion skills.** Every response that produces content should result in a new Notion page unless I explicitly request otherwise.
