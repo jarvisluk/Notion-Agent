@@ -25,6 +25,8 @@ This workspace focuses on Notion writing. Use Notion-related skills and tools wh
 - Create a new Notion page for each new topic or chat session by default, unless I provide an existing Notion link or page name.
 - Only output content directly in the chat if I explicitly ask for it.
 - Before writing to Notion, map the current Notion structure and identify the correct database or page. Do not change schema, properties, or database structure unless I explicitly request it.
+- If existing Notion content differs from the agent's last written version, treat it as user-manual edits and use the current page as the source of truth.
+- For pages manually adjusted by the user, apply incremental updates only; do not overwrite the full page content unless explicitly approved.
 - Write content directly in Notion. In the chat, provide only a brief summary and the edited Notion page link unless I explicitly ask for full content in the chat.
 
 ## Default database
@@ -66,6 +68,7 @@ Follow this sequence so tasks stay predictable and reviewable. For detailed oper
 This section defines what the Agent must not do.
 
 - Do not change Notion schema, properties, or database structure unless explicitly requested.
+- Do not replace full Notion page content when user manual edits are detected; preserve user formatting and structure with targeted edits.
 - Do not add new dependencies without approval.
 - Do not perform destructive actions (delete pages, remove content) unless explicitly requested.
 - Do not proceed with unverified facts if web search is unavailable—ask for permission first.
